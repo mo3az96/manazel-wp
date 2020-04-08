@@ -1,0 +1,57 @@
+@mixin transition($transition...) {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+// @include transition(all 0.3s ease-in-out);
+
+@mixin goldgred {
+    background-image: -webkit-gradient(linear, left top, right top, from(#836440), color-stop(#ab9366), color-stop(#ab9366), to(#836440));
+    background-image: -o-linear-gradient(left, #836440, #ab9366, #ab9366, #836440);
+    background-image: linear-gradient(to right, #836440, #ab9366, #ab9366, #836440);
+    background-size: 200%;
+    @include transition(all 0.5s ease-in-out);
+
+    &:hover {
+        background-position: 100%;
+    }
+}
+
+@mixin redgred {
+    background-image: -webkit-gradient(linear, left top, right top, from(#701d34), color-stop(#953756), color-stop(#953756), to(#701d34));
+    background-image: -o-linear-gradient(left, #701d34, #953756, #953756, #701d34);
+    background-image: linear-gradient(to right, #701d34, #953756, #953756, #701d34);
+    background-size: 200%;
+    @include transition(all 0.5s ease-in-out);
+
+    &:hover {
+        background-position: 100%;
+    }
+}
+
+
+@mixin lg {
+    @media (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media (max-width: 767px) {
+        @content;
+    }
+}

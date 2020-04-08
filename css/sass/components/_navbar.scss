@@ -1,0 +1,26 @@
+.mo-navbar {
+    display: flex;
+    align-items: center;
+    margin-left: 33px;
+
+    #{$ltr} & {
+        margin-left: 0;
+        margin-right: 33px;
+    }
+}
+
+.nav-li {
+    margin: 0 10px;
+}
+
+.nav-anchor {
+    font-family: med;
+    font-size: 16px;
+    color: $text;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover,
+    &:focus {
+        color: $red;
+    }
+}

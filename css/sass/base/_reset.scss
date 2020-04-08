@@ -1,0 +1,26 @@
+body {
+    position: relative;
+    font-family: tajwal;
+    overflow: hidden;
+    text-transform: capitalize;
+
+
+    &::-webkit-scrollbar {
+        background-color: #fff;
+        width: 7px;
+        height: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #822a45;
+    }
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #822a45 #fff;
+}
+
+.overflow {
+    overflow: hidden !important;
+}

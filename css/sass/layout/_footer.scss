@@ -1,0 +1,250 @@
+footer {
+    background-image: -moz-linear-gradient(0deg, rgb(112, 29, 52) 0%, rgb(149, 55, 86) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(112, 29, 52) 0%, rgb(149, 55, 86) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(112, 29, 52) 0%, rgb(149, 55, 86) 100%);
+    padding: 60px 0 0;
+    margin-top: 98px;
+
+    @include xs {
+        padding: 40px 0 0;
+        margin-top: 80px;
+    }
+}
+
+
+.contant-info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(#fff, 0.15);
+
+    @include xs {
+        padding-bottom: 40px;
+        flex-direction: column;
+    }
+}
+
+.contact-methed {
+    display: flex;
+    align-items: center;
+    width: calc(100% / 3);
+
+    @include xs {
+        width: 100%;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.contact-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28.8px;
+    @include goldgred();
+    border-radius: 50%;
+    color: #fff;
+
+    @include xs {
+        margin-bottom: 15px;
+    }
+
+
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+}
+
+.contact-desc {
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+}
+
+.contact-name {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 9px;
+}
+
+.contact-way {
+    font-size: 24px;
+    color: #fff;
+    font-family: med;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover,
+    &:focus {
+        color: $secgold;
+    }
+}
+
+.footer {
+    margin-top: 65px;
+
+    @include xs {
+        margin-top: 40px;
+    }
+}
+
+.linksheading {
+    font-size: 18px;
+    color: #fff;
+    font-family: bold;
+    margin-bottom: 34px;
+
+    @include xs {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.foot-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 135px;
+    width: 285px;
+
+    @include xs {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    #{$ltr} & {
+        @include xs {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+}
+
+.foot-link {
+    text-transform: capitalize;
+    color: #fff;
+    display: inline-block;
+    @include transition(all 0.3s ease-in-out);
+    font-size: 16px;
+    font-family: light;
+    backface-visibility: hidden;
+
+
+    &:hover,
+    &:focus {
+        color: $secgold;
+        transform: translateX(-8px);
+
+        #{$ltr} & {
+            transform: translateX(8px);
+        }
+
+    }
+}
+
+.foot-nav-li {
+    margin-bottom: 10px;
+
+    &:nth-of-type(4n) {
+        margin: 0;
+    }
+
+    &:nth-of-type(n+5) {
+        margin-right: 60px;
+
+        #{$ltr} & {
+            margin-left: 60px;
+            margin-right: 0;
+
+            @include xs {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.newsletter-info {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 24px;
+
+    @include xs {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+
+    @include xs {
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
+
+.social-link {
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(#000, 0.2);
+    border-radius: 50%;
+    margin-left: 9px;
+    font-size: 18px;
+    color: #fff;
+    @include transition(all 0.3s ease-in-out);
+
+    #{$ltr} & {
+        margin-left: 0;
+        margin-right: 9px;
+    }
+
+    &:hover {
+        background-color: $secgold;
+        color: #fff;
+    }
+
+    &:last-of-type {
+        margin-left: 0;
+
+        #{$ltr} & {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+.copytight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 44px;
+
+    @include xs {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .tasawk {
+        img {
+            margin: 0 5px;
+        }
+
+        @include xs {
+            margin-top: 15px;
+        }
+    }
+}

@@ -1,0 +1,272 @@
+.main-slider {
+    position: relative;
+
+    .owl-nav {
+        width: 0;
+        height: 0;
+
+        @include xs {
+            display: none;
+        }
+
+        button[class^=owl-] {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            outline: none;
+            border: none;
+            color: rgba(#000, 0.5);
+            font-size: 30px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.owl-next {
+                left: 60px;
+            }
+
+            &.owl-prev {
+                right: 60px;
+            }
+
+            &:hover {
+                color: #923553;
+            }
+        }
+    }
+
+    .owl-dots {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include sm {
+            bottom: 10px;
+        }
+
+        .owl-dot {
+            background: rgba(#000, 0.55);
+            outline: none;
+            border: none;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 3px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.active {
+                background: #923553;
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: #923553;
+            }
+        }
+    }
+}
+
+
+.news-cont {
+    margin-top: 88px;
+
+    @include sm {
+        margin-top: 40px;
+    }
+}
+
+.news-slider {
+    margin-top: 33px;
+
+    .owl-dots {
+        margin-top: 25px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        @include sm {
+            display: flex;
+        }
+
+        .owl-dot {
+            background: rgba(#000, 0.55);
+            outline: none;
+            border: none;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 4.5px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.active {
+                background: #923553;
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: #923553;
+            }
+        }
+    }
+
+    .boldText {
+        font-size: 30px;
+    }
+
+}
+
+.new {
+    .new-img {
+        width: 100%;
+        height: 228px;
+        max-width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include transition(all 0.5s ease-in-out);
+            backface-visibility: hidden;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .date {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba($hover, 0.90);
+        color: #fff;
+        font-family: med;
+
+        #{$ltr} & {
+            left: 10px;
+            right: auto;
+        }
+    }
+
+    .day {
+        font-size: 24px;
+        font-family: bold;
+        line-height: 1.083;
+    }
+
+    .mounth {
+        font-size: 13px;
+        line-height: 1.083;
+    }
+
+    .new-name {
+        font-family: bold;
+        color: $text;
+        font-size: 18px;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-top: 25px;
+        display: block;
+        width: max-content;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $hover;
+        }
+    }
+
+    .new-desc {
+        line-height: 1.75;
+        color: #666666;
+        font-size: 16px;
+        text-align: justify;
+        margin-top: 7px;
+    }
+
+
+}
+
+.more-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+    .more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px auto 0;
+        border: 2px solid #e8e8e8;
+        border-radius: 19px;
+        background-color: rgb(255, 255, 255);
+        width: 143px;
+        height: 38px;
+        font-size: 16px;
+        color: #808080;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover,
+        &:focus {
+            background-color: $hover;
+            border-color: $hover;
+            color: #fff;
+        }
+    }
+}
+
+
+.projects-slider {
+
+    .owl-dots {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        @include sm {
+            display: flex;
+        }
+
+        .owl-dot {
+            background: rgba(#000, 0.55);
+            outline: none;
+            border: none;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 4.5px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.active {
+                background: #923553;
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: #923553;
+            }
+        }
+    }
+
+    .boldText {
+        font-size: 30px;
+    }
+
+}
