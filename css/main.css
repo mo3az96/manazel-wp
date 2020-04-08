@@ -611,6 +611,11 @@ html[dir=ltr] .new .date {
   justify-content: center;
   margin-top: 40px;
 }
+@media (max-width: 767px) {
+  .more-cont {
+    margin-top: 10px;
+  }
+}
 .more-cont .more {
   display: flex;
   align-items: center;
@@ -1378,7 +1383,7 @@ footer {
 @media (max-width: 767px) {
   footer {
     padding: 40px 0 0;
-    margin-top: 80px;
+    margin-top: 60px;
   }
 }
 

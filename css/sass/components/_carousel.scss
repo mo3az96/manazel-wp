@@ -206,6 +206,10 @@
     justify-content: center;
     margin-top: 40px;
 
+    @include sm {
+        margin-top: 10px;
+    }
+
     .more {
         display: flex;
         align-items: center;
