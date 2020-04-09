@@ -47,7 +47,7 @@
 
     @include xs {
         padding: 10px 0;
-        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
@@ -57,7 +57,6 @@
 
     @include xs {
         width: 200px;
-        margin-bottom: 10px;
     }
 }
 
@@ -87,9 +86,19 @@
         @include goldgred();
         margin-left: 6px;
 
+        @include sm {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
         #{$ltr} & {
             margin-left: 0;
             margin-right: 6px;
+
+            @include sm {
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
     }
 

@@ -3,9 +3,17 @@
     align-items: center;
     margin-left: 33px;
 
+    @include sm {
+        margin: 0;
+    }
+
     #{$ltr} & {
         margin-left: 0;
         margin-right: 33px;
+
+        @include sm {
+            margin: 0;
+        }
     }
 }
 
